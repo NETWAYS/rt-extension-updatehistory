@@ -2,7 +2,7 @@
 %#
 %# COPYRIGHT:
 %#
-%# This software is Copyright (c) 1996-2011 Best Practical Solutions, LLC
+%# This software is Copyright (c) 1996-2012 Best Practical Solutions, LLC
 %#                                          <sales@bestpractical.com>
 %#
 %# (Except where explicitly superseded by other copyright notices)
@@ -62,7 +62,7 @@
 
 <div id="ticket-update-metadata">
   <&|/Widgets/TitleBox, title => loc('Ticket and Transaction') &>
-<table width="100%" border="0">
+<table border="0">
 % $m->callback(CallbackName => 'AfterTableOpens', ARGSRef => \%ARGS, Ticket => $TicketObj);
 
 % my $skip;
@@ -140,10 +140,11 @@
 
   </table>
   </&>
-
-<& /Ticket/Elements/rtx-updatehistory-inline, Ticket => $TicketObj &>
-
 </div>
+
+<table class="update-table-struct">
+<tr>
+<td>
 
 <div id="ticket-update-message">
   <& /Ticket/Elements/ShowSimplifiedRecipients, TicketObj => $TicketObj, %ARGS &>
@@ -196,6 +197,13 @@
   </&>
 % }
 </div>
+
+</td>
+<td>
+<& /Ticket/Elements/rtx-updatehistory-inline, Ticket => $TicketObj &>
+</td>
+</tr>
+</table>
 
 % if (my $recips = $m->notes("DryRun-Recipients-".$TicketObj->Id)) {
 <input type="hidden" name="TxnRecipients" value="<% join ",",sort keys %{$recips} %>" />
