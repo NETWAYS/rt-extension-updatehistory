@@ -1,0 +1,16 @@
+<& /Widgets/TitleBoxStart, title => loc('History') &>
+<div class="rtx-update-history-box">
+<& /Ticket/Elements/ShowHistory , 
+    Ticket => $Ticket, 
+    ShowHeaders => 0, 
+    URIFile => $URI, 
+    ShowTitle => 0,
+    ShowDisplayModes => 0,
+    ShowTitleBarCommands => 0
+    &> 
+</div>
+<& /Widgets/TitleBoxEnd &>
+<%args>
+	$Ticket => undef
+	$URI => 'Update.html'
+</%args>
