@@ -2,13 +2,11 @@
 <& /Elements/ShowHistory,
     Object => $Ticket,
     ShowHeaders => $ARGS{'ShowHeaders'},
-    Attachments => $Ticket->Attachments,
-    AttachmentContent => $Ticket->TextAttachments,
     DisplayPath => $URI,
     ShowDisplayModes => 0
     &>
 </div>
 <%args>
-	$Ticket => undef
+	$Ticket
 	$URI => 'Update.html'
 </%args>

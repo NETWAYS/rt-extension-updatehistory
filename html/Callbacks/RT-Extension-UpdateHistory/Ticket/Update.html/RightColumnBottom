@@ -1,4 +1,4 @@
-<& /Ticket/Elements/RT-Extension-UpdateHistory-inline, Ticket => $Ticket &>
+<& /Ticket/Elements/RT-Extension-UpdateHistory, Ticket => $Ticket &>
 <%ARGS>
-	$Ticket => undef
+	$Ticket
 </%ARGS>
