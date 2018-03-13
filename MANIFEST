@@ -19,3 +19,4 @@ lib/RT/Extension/UpdateHistory.pm
 Makefile.PL
 MANIFEST			This list of files
 META.yml
+README
