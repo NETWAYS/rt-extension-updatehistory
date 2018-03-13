@@ -1,7 +1,7 @@
-.rtx-update-history-box {
+.rt-extension-update-history-box {
     height: 600px;
     overflow: scroll;
-    
+
 }
 
 .update-table-struct {

@@ -1,6 +1,6 @@
 use inc::Module::Install;
 
-RTx     'RTx-UpdateHistory';
+RTx     'RT-Extension-UpdateHistory';
 license 'gpl_2';
 repository 'https://github.com/NETWAYS/rt-extension-updatehistory';
 

@@ -1,5 +1,5 @@
 ---
-abstract: 'RTx-UpdateHistory Extension'
+abstract: 'RT-Extension-UpdateHistory Extension'
 author:
   - 'NETWAYS GmbH <info@netways.de>'
 build_requires:
@@ -13,7 +13,7 @@ license: gpl_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: RTx-UpdateHistory
+name: RT-Extension-UpdateHistory
 no_index:
   directory:
     - inc
