@@ -1,10 +1,10 @@
-use strict;
 use inc::Module::Install;
 
-RTx('RTx-UpdateHistory');
-author('Marius Hein <marius.hein@netways.de>');
-version('1.0');
-license('gpl');
+RTx     'RTx-UpdateHistory';
+license 'gpl_2';
+repository 'https://github.com/NETWAYS/rt-extension-updatehistory';
 
-&WriteAll;
+requires_rt '4.4.2';
 
+sign;
+WriteAll;
