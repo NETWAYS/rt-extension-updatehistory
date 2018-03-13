@@ -1,11 +1,34 @@
 <div class="rt-extension-update-history-box">
 <& /Elements/ShowHistory,
     Object => $Ticket,
+    Transactions => $Transactions,
     ShowHeaders => $ARGS{'ShowHeaders'},
     DisplayPath => $URI,
     ShowDisplayModes => 0
     &>
+
+    <div class="rt-extension-update-history-info">
+% my $totalCount = $Transactions->CountAll();
+% if ($maxEntries && $totalCount > $maxEntries) {
+        <p>Showing <i><% $maxEntries %></i> out of <i><% $totalCount %></i> transactions (Most recent first)</p>
+% } else {
+        <p>Showing <i>all</i> transactions (Most recent first)</p>
+% }
+    </div>
+
 </div>
+<%init>
+    my $Transactions = $Ticket->Transactions();
+    $Transactions->OrderByCols(
+        { FIELD => 'Created',   ORDER => 'DESC' },
+        { FIELD => 'id',        ORDER => 'DESC' },
+    );
+
+    my $maxEntries = RT->Config->Get('RT_Extension_UpdateHistory_MaxEntries');
+    if ($maxEntries) {
+        $Transactions->RowsPerPage($maxEntries);
+    }
+</%init>
 <%args>
 	$Ticket
 	$URI => 'Update.html'

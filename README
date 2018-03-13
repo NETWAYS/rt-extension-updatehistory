@@ -26,6 +26,10 @@ INSTALLATION
 
     Restart your webserver
 
+CONFIGURATION
+    $RT_Extension_UpdateHistory_MaxEntries
+        The maximum number of history entries to list. If not set, everything is listed.
+
 AUTHOR
     NETWAYS GmbH <info@netways.de>
 
