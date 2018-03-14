@@ -1,0 +1,23 @@
+.rt-extension-update-history-box {
+    height: 600px;
+    overflow: scroll;
+
+}
+
+.rt-extension-update-history-info {
+    padding: 1em;
+}
+
+.rt-extension-update-history-info p {
+    margin: 0;
+    padding: 1em;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+#ticket-update-message {
+    min-width: 600px;
+}

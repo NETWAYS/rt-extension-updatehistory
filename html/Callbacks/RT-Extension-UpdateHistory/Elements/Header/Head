@@ -1,1 +1,0 @@
-<link rel="stylesheet" href="<%RT->Config->Get('WebPath')%>/NoAuth/css/RT-Extension-UpdateHistory.css" type="text/css" media="all" />

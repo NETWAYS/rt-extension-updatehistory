@@ -7,6 +7,8 @@ use warnings;
 
 our $VERSION = '1.0.0';
 
+RT->AddStyleSheets('updatehistory.css');
+
 =head1 NAME
 
 RT-Extension-UpdateHistory - Allows to view a ticket's history while commenting/replying
