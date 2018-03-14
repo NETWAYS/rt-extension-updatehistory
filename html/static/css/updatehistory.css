@@ -1,7 +1,6 @@
 .rt-extension-update-history-box {
     height: 600px;
-    overflow: scroll;
-
+    overflow: auto;
 }
 
 .rt-extension-update-history-info {
@@ -18,6 +17,33 @@
     background-color: cornflowerblue;
 }
 
-#ticket-update-message {
-    min-width: 600px;
+/* Responsive styles START */
+
+.sidebyside #ticket-update-metadata {
+    float: none;
+    width: 100%;
 }
+
+.sidebyside #ticket-update-message {
+    float: none;
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .sidebyside #ticket-update-metadata {
+        float: right;
+        width: 40%;
+    }
+
+    .sidebyside #ticket-update-message {
+        float: left;
+        width: 58%;
+    }
+
+    .rt-extension-update-history-box {
+        float: right;
+        width: 40%;
+    }
+}
+
+/* Responsive styles END */
