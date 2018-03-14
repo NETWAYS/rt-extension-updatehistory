@@ -1,7 +1,7 @@
-html/Callbacks/RT-Extension-UpdateHistory/Ticket/Update.html/RightColumnBottom
+html/Callbacks/RT-Extension-UpdateHistory/Ticket/Update.html/AfterScrips
 html/static/autohandler
 html/static/css/updatehistory.css
-html/Ticket/Elements/RT-Extension-UpdateHistory-inline
+html/Ticket/Elements/RT-Extension-UpdateHistory
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
