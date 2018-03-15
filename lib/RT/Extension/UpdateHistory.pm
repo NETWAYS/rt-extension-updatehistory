@@ -59,16 +59,9 @@ The maximum number of history entries to list. If not set, everything is listed.
 
 NETWAYS GmbH <lt>support@netways.de<gt>
 
-=for html <p>All bugs should be reported via email to <a
-href="mailto:bug-RT-Extension-UpdateHistory@rt.cpan.org">bug-RT-Extension-UpdateHistory@rt.cpan.org</a>
-or via the web at <a
-href="http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-UpdateHistory">rt.cpan.org</a>.</p>
+=head1 BUGS
 
-=for text
-    All bugs should be reported via email to
-        bug-RT-Extension-UpdateHistory@rt.cpan.org
-    or via the web at
-        http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-UpdateHistory
+All bugs should be reported on L<GitHub|https://github.com/netways/rt-extension-updatehistory>.
 
 =head1 LICENSE AND COPYRIGHT
 
