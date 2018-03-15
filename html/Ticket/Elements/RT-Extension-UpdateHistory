@@ -24,7 +24,7 @@
         { FIELD => 'id',        ORDER => 'DESC' },
     );
 
-    my $maxEntries = RT->Config->Get('RT_Extension_UpdateHistory_MaxEntries');
+    my $maxEntries = RT->Config->Get('UpdateHistory_MaxEntries');
     if ($maxEntries) {
         $Transactions->RowsPerPage($maxEntries);
     }
