@@ -1,7 +1,6 @@
 package RT::Extension::UpdateHistory;
 
-require 5.10.0;
-
+use 5.100;
 use strict;
 use warnings;
 
@@ -50,9 +49,15 @@ Add this line:
 
 =back
 
+=head1 CONFIGURATION
+
+=head2 C<$UpdateHistory_MaxEntries>
+
+The maximum number of history entries to list. If not set, everything is listed.
+
 =head1 AUTHOR
 
-NETWAYS GmbH <lt>info@netways.de<gt>
+NETWAYS GmbH <lt>support@netways.de<gt>
 
 =for html <p>All bugs should be reported via email to <a
 href="mailto:bug-RT-Extension-UpdateHistory@rt.cpan.org">bug-RT-Extension-UpdateHistory@rt.cpan.org</a>
