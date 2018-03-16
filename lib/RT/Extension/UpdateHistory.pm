@@ -1,6 +1,6 @@
 package RT::Extension::UpdateHistory;
 
-use 5.10.0;
+use 5.010_001;
 use strict;
 use warnings;
 
