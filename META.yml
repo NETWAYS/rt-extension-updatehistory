@@ -17,6 +17,7 @@ name: RT-Extension-UpdateHistory
 no_index:
   directory:
     - inc
+    - html
 requires:
   perl: 5.10.1
 resources:
