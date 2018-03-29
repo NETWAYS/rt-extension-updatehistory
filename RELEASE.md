@@ -1,6 +1,6 @@
 # Release Workflow
 
-Specify the release version.
+Specify the release version as shell variable.
 
 ```
 VERSION=2.0.0
@@ -24,7 +24,7 @@ git log --use-mailmap | grep '^Author:' | cut -f2- -d' ' | sort | uniq > AUTHORS
 Update the version in the module's `.pm` file and `META.yml`.
 
 ```
-find lib/RT/ -type f -name '*.pm' -exec sed -i "s/our \$VERSION = .*/our \$VERSION = '$VERSION';/g" {} \;
+find lib/RT/ -type f -name '*.pm' -exec sed -i "s/our \$VERSION=.*/our \$VERSION='$VERSION';/g" {} \;
 find . -type f -name 'META.yml' -exec sed -i "s/^version: .*/version: $VERSION/g" {} \;
 ```
 
