@@ -16,8 +16,9 @@ meta-spec:
 name: RT-Extension-UpdateHistory
 no_index:
   directory:
-    - inc
     - html
+    - inc
+    - static
 requires:
   perl: 5.10.1
 resources:
